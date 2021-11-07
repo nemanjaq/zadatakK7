@@ -22,6 +22,8 @@
 		2F842ADD2737EAC500AA261A /* PersonListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F842ADC2737EAC500AA261A /* PersonListVC.swift */; };
 		2F842AE22738096700AA261A /* ZKButtonClose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F842AE12738096700AA261A /* ZKButtonClose.swift */; };
 		2F842AE527381BDC00AA261A /* ZKIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F842AE427381BDC00AA261A /* ZKIcons.swift */; };
+		2F842AE9273830BA00AA261A /* KeyboardTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F842AE8273830BA00AA261A /* KeyboardTestVC.swift */; };
+		4F881A49785FAE5B9DA0AA9D /* Pods_ZadatakK7.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2D05EC2C21383E54632E8E /* Pods_ZadatakK7.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,10 @@
 		2F842ADC2737EAC500AA261A /* PersonListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListVC.swift; sourceTree = "<group>"; };
 		2F842AE12738096700AA261A /* ZKButtonClose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKButtonClose.swift; sourceTree = "<group>"; };
 		2F842AE427381BDC00AA261A /* ZKIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKIcons.swift; sourceTree = "<group>"; };
+		2F842AE8273830BA00AA261A /* KeyboardTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardTestVC.swift; sourceTree = "<group>"; };
+		7FC6119FD2353369BC0BB79A /* Pods-ZadatakK7.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZadatakK7.release.xcconfig"; path = "Target Support Files/Pods-ZadatakK7/Pods-ZadatakK7.release.xcconfig"; sourceTree = "<group>"; };
+		7FF411D70B8679A6D69539A8 /* Pods-ZadatakK7.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZadatakK7.debug.xcconfig"; path = "Target Support Files/Pods-ZadatakK7/Pods-ZadatakK7.debug.xcconfig"; sourceTree = "<group>"; };
+		CF2D05EC2C21383E54632E8E /* Pods_ZadatakK7.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZadatakK7.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +55,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F881A49785FAE5B9DA0AA9D /* Pods_ZadatakK7.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09A0AB7F62BFF95BC93C2CF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7FF411D70B8679A6D69539A8 /* Pods-ZadatakK7.debug.xcconfig */,
+				7FC6119FD2353369BC0BB79A /* Pods-ZadatakK7.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		25587F912F62533F068997D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF2D05EC2C21383E54632E8E /* Pods_ZadatakK7.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2F842A8F2737CA7F00AA261A = {
 			isa = PBXGroup;
 			children = (
 				2F842A9A2737CA7F00AA261A /* ZadatakK7 */,
 				2F842A992737CA7F00AA261A /* Products */,
+				09A0AB7F62BFF95BC93C2CF7 /* Pods */,
+				25587F912F62533F068997D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +129,7 @@
 			children = (
 				2F842ABE2737D3E500AA261A /* HomeVC.swift */,
 				2F842AC72737DB4400AA261A /* DataList */,
+				2F842AE72738309200AA261A /* Keyboard */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -166,6 +194,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		2F842AE72738309200AA261A /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				2F842AE8273830BA00AA261A /* KeyboardTestVC.swift */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -173,9 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F842AAC2737CA8100AA261A /* Build configuration list for PBXNativeTarget "ZadatakK7" */;
 			buildPhases = (
+				852B075C7FB5BE69EE45EAB2 /* [CP] Check Pods Manifest.lock */,
 				2F842A942737CA7F00AA261A /* Sources */,
 				2F842A952737CA7F00AA261A /* Frameworks */,
 				2F842A962737CA7F00AA261A /* Resources */,
+				BEE6AF2087C0735EF42F16E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,6 +269,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		852B075C7FB5BE69EE45EAB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZadatakK7-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEE6AF2087C0735EF42F16E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZadatakK7/Pods-ZadatakK7-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZadatakK7/Pods-ZadatakK7-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZadatakK7/Pods-ZadatakK7-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2F842A942737CA7F00AA261A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -242,6 +322,7 @@
 				2F842ACC2737DB9C00AA261A /* PersonInfoVC.swift in Sources */,
 				2F842A9C2737CA7F00AA261A /* AppDelegate.swift in Sources */,
 				2F842ABC2737D2B800AA261A /* ZKColor.swift in Sources */,
+				2F842AE9273830BA00AA261A /* KeyboardTestVC.swift in Sources */,
 				2F842ABF2737D3E500AA261A /* HomeVC.swift in Sources */,
 				2F842AB72737CEEB00AA261A /* ZKButton.swift in Sources */,
 				2F842AE22738096700AA261A /* ZKButtonClose.swift in Sources */,
@@ -391,6 +472,7 @@
 		};
 		2F842AAD2737CA8100AA261A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FF411D70B8679A6D69539A8 /* Pods-ZadatakK7.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -410,6 +492,7 @@
 		};
 		2F842AAE2737CA8100AA261A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FC6119FD2353369BC0BB79A /* Pods-ZadatakK7.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -42,6 +42,9 @@
                                         <state key="normal" title="Cocoapods Test">
                                             <color key="titleColor" name="ZKButton"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="hQH-q5-gUI" kind="presentation" id="dFH-oI-Y3F"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAF-Tg-IOA" customClass="ZKButton" customModule="ZadatakK7" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="148" width="150" height="44"/>
@@ -176,7 +179,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lfv-FB-8g7" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vLN-xA-4Sg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -301,10 +304,53 @@
             </objects>
             <point key="canvasLocation" x="2059" y="-100"/>
         </scene>
+        <!--Keyboard TestVC-->
+        <scene sceneID="EWf-hl-hea">
+            <objects>
+                <viewController id="hQH-q5-gUI" customClass="KeyboardTestVC" customModule="ZadatakK7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k1c-tN-bp8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wGo-gM-KEq">
+                                <rect key="frame" x="60" y="162" width="200" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="GcV-Vh-ceM"/>
+                                    <constraint firstAttribute="width" constant="200" id="yVo-1l-GCl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwP-bV-AWg" customClass="ZKButtonClose" customModule="ZadatakK7" customModuleProvider="target">
+                                <rect key="frame" x="256" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Gqa-IU-ocM"/>
+                                    <constraint firstAttribute="width" constant="44" id="LQT-VV-cCe"/>
+                                </constraints>
+                                <state key="normal" title="X"/>
+                                <connections>
+                                    <action selector="didPressButtonClose:" destination="hQH-q5-gUI" eventType="touchUpInside" id="tAK-Xw-6gS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="da6-uc-BJh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="da6-uc-BJh" firstAttribute="trailing" secondItem="KwP-bV-AWg" secondAttribute="trailing" constant="20" id="aBg-8c-5EW"/>
+                            <constraint firstItem="wGo-gM-KEq" firstAttribute="centerX" secondItem="k1c-tN-bp8" secondAttribute="centerX" id="bQr-Zw-0mD"/>
+                            <constraint firstItem="KwP-bV-AWg" firstAttribute="top" secondItem="da6-uc-BJh" secondAttribute="top" constant="20" id="jCJ-HO-2bQ"/>
+                            <constraint firstItem="wGo-gM-KEq" firstAttribute="centerY" secondItem="k1c-tN-bp8" secondAttribute="centerY" multiplier="0.8" id="wgp-Y7-Ahk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dwB-HR-kgr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2059" y="623"/>
+        </scene>
     </scenes>
     <resources>
         <namedColor name="ZKButton">
-            <color red="0.29411764705882354" green="0.33333333333333331" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.29399999976158142" green="0.33300000429153442" blue="0.68199998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
