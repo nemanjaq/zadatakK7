@@ -12,9 +12,15 @@ final class ZKButton: UIButton {
   let borderWidth: CGFloat = 2
   let borderColor = UIColor(named: ZKColor.button.rawValue) ?? .systemBlue
   let cornerRadius: CGFloat = 5
+
+  
+  required init?(coder: NSCoder) {
+    super.init(coder: coder)
+    configureBorder()
+  }
   
   
-  override func draw(_ rect: CGRect) {
+  private func configureBorder() {
     layer.borderWidth = borderWidth
     layer.borderColor = borderColor.cgColor
     layer.cornerRadius = cornerRadius

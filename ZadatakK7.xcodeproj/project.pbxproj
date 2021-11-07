@@ -15,6 +15,13 @@
 		2F842AB72737CEEB00AA261A /* ZKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F842AB62737CEEB00AA261A /* ZKButton.swift */; };
 		2F842ABC2737D2B800AA261A /* ZKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F842ABB2737D2B800AA261A /* ZKColor.swift */; };
 		2F842ABF2737D3E500AA261A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F842ABE2737D3E500AA261A /* HomeVC.swift */; };
+		2F842AC52737D82F00AA261A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F842AC42737D82F00AA261A /* Person.swift */; };
+		2F842ACC2737DB9C00AA261A /* PersonInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F842ACB2737DB9C00AA261A /* PersonInfoVC.swift */; };
+		2F842AD02737DFFA00AA261A /* PersonMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F842ACF2737DFFA00AA261A /* PersonMock.swift */; };
+		2F842AD52737E11B00AA261A /* ZKPersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F842AD42737E11B00AA261A /* ZKPersonCell.swift */; };
+		2F842ADD2737EAC500AA261A /* PersonListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F842ADC2737EAC500AA261A /* PersonListVC.swift */; };
+		2F842AE22738096700AA261A /* ZKButtonClose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F842AE12738096700AA261A /* ZKButtonClose.swift */; };
+		2F842AE527381BDC00AA261A /* ZKIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F842AE427381BDC00AA261A /* ZKIcons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,13 @@
 		2F842AB62737CEEB00AA261A /* ZKButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKButton.swift; sourceTree = "<group>"; };
 		2F842ABB2737D2B800AA261A /* ZKColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKColor.swift; sourceTree = "<group>"; };
 		2F842ABE2737D3E500AA261A /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		2F842AC42737D82F00AA261A /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		2F842ACB2737DB9C00AA261A /* PersonInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoVC.swift; sourceTree = "<group>"; };
+		2F842ACF2737DFFA00AA261A /* PersonMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonMock.swift; sourceTree = "<group>"; };
+		2F842AD42737E11B00AA261A /* ZKPersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKPersonCell.swift; sourceTree = "<group>"; };
+		2F842ADC2737EAC500AA261A /* PersonListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListVC.swift; sourceTree = "<group>"; };
+		2F842AE12738096700AA261A /* ZKButtonClose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKButtonClose.swift; sourceTree = "<group>"; };
+		2F842AE427381BDC00AA261A /* ZKIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKIcons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +77,8 @@
 				2F842AA92737CA8100AA261A /* Info.plist */,
 				2F842AB92737D2A400AA261A /* Config */,
 				2F842AB52737CEB000AA261A /* Custom */,
+				2F842ACE2737DD5D00AA261A /* Mocks */,
+				2F842AC32737D81000AA261A /* Model */,
 				2F842AB02737CBC300AA261A /* Support */,
 				2F842AB32737CC1400AA261A /* ViewControllers */,
 			);
@@ -85,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				2F842ABE2737D3E500AA261A /* HomeVC.swift */,
+				2F842AC72737DB4400AA261A /* DataList */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -92,7 +109,8 @@
 		2F842AB52737CEB000AA261A /* Custom */ = {
 			isa = PBXGroup;
 			children = (
-				2F842AB62737CEEB00AA261A /* ZKButton.swift */,
+				2F842AD32737E10300AA261A /* Cells */,
+				2F842AD22737E0F800AA261A /* Buttons */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -101,8 +119,51 @@
 			isa = PBXGroup;
 			children = (
 				2F842ABB2737D2B800AA261A /* ZKColor.swift */,
+				2F842AE427381BDC00AA261A /* ZKIcons.swift */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		2F842AC32737D81000AA261A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F842AC42737D82F00AA261A /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F842AC72737DB4400AA261A /* DataList */ = {
+			isa = PBXGroup;
+			children = (
+				2F842ACB2737DB9C00AA261A /* PersonInfoVC.swift */,
+				2F842ADC2737EAC500AA261A /* PersonListVC.swift */,
+			);
+			path = DataList;
+			sourceTree = "<group>";
+		};
+		2F842ACE2737DD5D00AA261A /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				2F842ACF2737DFFA00AA261A /* PersonMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		2F842AD22737E0F800AA261A /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				2F842AB62737CEEB00AA261A /* ZKButton.swift */,
+				2F842AE12738096700AA261A /* ZKButtonClose.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		2F842AD32737E10300AA261A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2F842AD42737E11B00AA261A /* ZKPersonCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,11 +236,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F842ADD2737EAC500AA261A /* PersonListVC.swift in Sources */,
+				2F842AE527381BDC00AA261A /* ZKIcons.swift in Sources */,
+				2F842AC52737D82F00AA261A /* Person.swift in Sources */,
+				2F842ACC2737DB9C00AA261A /* PersonInfoVC.swift in Sources */,
 				2F842A9C2737CA7F00AA261A /* AppDelegate.swift in Sources */,
 				2F842ABC2737D2B800AA261A /* ZKColor.swift in Sources */,
 				2F842ABF2737D3E500AA261A /* HomeVC.swift in Sources */,
 				2F842AB72737CEEB00AA261A /* ZKButton.swift in Sources */,
+				2F842AE22738096700AA261A /* ZKButtonClose.swift in Sources */,
+				2F842AD52737E11B00AA261A /* ZKPersonCell.swift in Sources */,
 				2F842A9E2737CA7F00AA261A /* SceneDelegate.swift in Sources */,
+				2F842AD02737DFFA00AA261A /* PersonMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
