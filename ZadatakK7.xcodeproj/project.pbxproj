@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		2F842A9C2737CA7F00AA261A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F842A9B2737CA7F00AA261A /* AppDelegate.swift */; };
 		2F842A9E2737CA7F00AA261A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F842A9D2737CA7F00AA261A /* SceneDelegate.swift */; };
-		2F842AA02737CA7F00AA261A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F842A9F2737CA7F00AA261A /* ViewController.swift */; };
 		2F842AA32737CA7F00AA261A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F842AA12737CA7F00AA261A /* Main.storyboard */; };
 		2F842AA52737CA8100AA261A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F842AA42737CA8100AA261A /* Assets.xcassets */; };
 		2F842AA82737CA8100AA261A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F842AA62737CA8100AA261A /* LaunchScreen.storyboard */; };
+		2F842AB72737CEEB00AA261A /* ZKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F842AB62737CEEB00AA261A /* ZKButton.swift */; };
+		2F842ABC2737D2B800AA261A /* ZKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F842ABB2737D2B800AA261A /* ZKColor.swift */; };
+		2F842ABF2737D3E500AA261A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F842ABE2737D3E500AA261A /* HomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2F842A982737CA7F00AA261A /* ZadatakK7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZadatakK7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F842A9B2737CA7F00AA261A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F842A9D2737CA7F00AA261A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2F842A9F2737CA7F00AA261A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2F842AA22737CA7F00AA261A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F842AA42737CA8100AA261A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F842AA72737CA8100AA261A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F842AA92737CA8100AA261A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F842AB62737CEEB00AA261A /* ZKButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKButton.swift; sourceTree = "<group>"; };
+		2F842ABB2737D2B800AA261A /* ZKColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKColor.swift; sourceTree = "<group>"; };
+		2F842ABE2737D3E500AA261A /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		2F842A9A2737CA7F00AA261A /* ZadatakK7 */ = {
 			isa = PBXGroup;
 			children = (
+				2F842AA92737CA8100AA261A /* Info.plist */,
+				2F842AB92737D2A400AA261A /* Config */,
+				2F842AB52737CEB000AA261A /* Custom */,
+				2F842AB02737CBC300AA261A /* Support */,
+				2F842AB32737CC1400AA261A /* ViewControllers */,
+			);
+			path = ZadatakK7;
+			sourceTree = "<group>";
+		};
+		2F842AB02737CBC300AA261A /* Support */ = {
+			isa = PBXGroup;
+			children = (
 				2F842A9B2737CA7F00AA261A /* AppDelegate.swift */,
 				2F842A9D2737CA7F00AA261A /* SceneDelegate.swift */,
-				2F842A9F2737CA7F00AA261A /* ViewController.swift */,
 				2F842AA12737CA7F00AA261A /* Main.storyboard */,
 				2F842AA42737CA8100AA261A /* Assets.xcassets */,
 				2F842AA62737CA8100AA261A /* LaunchScreen.storyboard */,
-				2F842AA92737CA8100AA261A /* Info.plist */,
 			);
-			path = ZadatakK7;
+			path = Support;
+			sourceTree = "<group>";
+		};
+		2F842AB32737CC1400AA261A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F842ABE2737D3E500AA261A /* HomeVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2F842AB52737CEB000AA261A /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				2F842AB62737CEEB00AA261A /* ZKButton.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		2F842AB92737D2A400AA261A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2F842ABB2737D2B800AA261A /* ZKColor.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F842AA02737CA7F00AA261A /* ViewController.swift in Sources */,
 				2F842A9C2737CA7F00AA261A /* AppDelegate.swift in Sources */,
+				2F842ABC2737D2B800AA261A /* ZKColor.swift in Sources */,
+				2F842ABF2737D3E500AA261A /* HomeVC.swift in Sources */,
+				2F842AB72737CEEB00AA261A /* ZKButton.swift in Sources */,
 				2F842A9E2737CA7F00AA261A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nk.ZadatakK7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nk.ZadatakK7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
