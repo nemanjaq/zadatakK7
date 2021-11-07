@@ -25,6 +25,7 @@
 		2F842AE9273830BA00AA261A /* KeyboardTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F842AE8273830BA00AA261A /* KeyboardTestVC.swift */; };
 		2F842AF92738376200AA261A /* WebTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F842AF82738376200AA261A /* WebTestVC.swift */; };
 		2F842AFC273838A000AA261A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F842AFB273838A000AA261A /* WebKit.framework */; };
+		2F842AFF273840C000AA261A /* README.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F842AFE273840C000AA261A /* README.swift */; };
 		4F881A49785FAE5B9DA0AA9D /* Pods_ZadatakK7.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2D05EC2C21383E54632E8E /* Pods_ZadatakK7.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		2F842AE8273830BA00AA261A /* KeyboardTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardTestVC.swift; sourceTree = "<group>"; };
 		2F842AF82738376200AA261A /* WebTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebTestVC.swift; sourceTree = "<group>"; };
 		2F842AFB273838A000AA261A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		2F842AFE273840C000AA261A /* README.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = README.swift; sourceTree = "<group>"; };
 		7FC6119FD2353369BC0BB79A /* Pods-ZadatakK7.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZadatakK7.release.xcconfig"; path = "Target Support Files/Pods-ZadatakK7/Pods-ZadatakK7.release.xcconfig"; sourceTree = "<group>"; };
 		7FF411D70B8679A6D69539A8 /* Pods-ZadatakK7.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZadatakK7.debug.xcconfig"; path = "Target Support Files/Pods-ZadatakK7/Pods-ZadatakK7.debug.xcconfig"; sourceTree = "<group>"; };
 		CF2D05EC2C21383E54632E8E /* Pods_ZadatakK7.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZadatakK7.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +108,7 @@
 		2F842A9A2737CA7F00AA261A /* ZadatakK7 */ = {
 			isa = PBXGroup;
 			children = (
+				2F842AFE273840C000AA261A /* README.swift */,
 				2F842AA92737CA8100AA261A /* Info.plist */,
 				2F842AB92737D2A400AA261A /* Config */,
 				2F842AB52737CEB000AA261A /* Custom */,
@@ -169,8 +172,8 @@
 		2F842AC72737DB4400AA261A /* DataList */ = {
 			isa = PBXGroup;
 			children = (
-				2F842ACB2737DB9C00AA261A /* PersonInfoVC.swift */,
 				2F842ADC2737EAC500AA261A /* PersonListVC.swift */,
+				2F842ACB2737DB9C00AA261A /* PersonInfoVC.swift */,
 			);
 			path = DataList;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				2F842AD52737E11B00AA261A /* ZKPersonCell.swift in Sources */,
 				2F842A9E2737CA7F00AA261A /* SceneDelegate.swift in Sources */,
 				2F842AD02737DFFA00AA261A /* PersonMock.swift in Sources */,
+				2F842AFF273840C000AA261A /* README.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
