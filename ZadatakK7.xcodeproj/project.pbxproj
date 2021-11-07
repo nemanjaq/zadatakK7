@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,8 @@
 		2F842AE22738096700AA261A /* ZKButtonClose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F842AE12738096700AA261A /* ZKButtonClose.swift */; };
 		2F842AE527381BDC00AA261A /* ZKIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F842AE427381BDC00AA261A /* ZKIcons.swift */; };
 		2F842AE9273830BA00AA261A /* KeyboardTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F842AE8273830BA00AA261A /* KeyboardTestVC.swift */; };
+		2F842AF92738376200AA261A /* WebTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F842AF82738376200AA261A /* WebTestVC.swift */; };
+		2F842AFC273838A000AA261A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F842AFB273838A000AA261A /* WebKit.framework */; };
 		4F881A49785FAE5B9DA0AA9D /* Pods_ZadatakK7.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2D05EC2C21383E54632E8E /* Pods_ZadatakK7.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		2F842AE12738096700AA261A /* ZKButtonClose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKButtonClose.swift; sourceTree = "<group>"; };
 		2F842AE427381BDC00AA261A /* ZKIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKIcons.swift; sourceTree = "<group>"; };
 		2F842AE8273830BA00AA261A /* KeyboardTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardTestVC.swift; sourceTree = "<group>"; };
+		2F842AF82738376200AA261A /* WebTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebTestVC.swift; sourceTree = "<group>"; };
+		2F842AFB273838A000AA261A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		7FC6119FD2353369BC0BB79A /* Pods-ZadatakK7.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZadatakK7.release.xcconfig"; path = "Target Support Files/Pods-ZadatakK7/Pods-ZadatakK7.release.xcconfig"; sourceTree = "<group>"; };
 		7FF411D70B8679A6D69539A8 /* Pods-ZadatakK7.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZadatakK7.debug.xcconfig"; path = "Target Support Files/Pods-ZadatakK7/Pods-ZadatakK7.debug.xcconfig"; sourceTree = "<group>"; };
 		CF2D05EC2C21383E54632E8E /* Pods_ZadatakK7.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZadatakK7.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F842AFC273838A000AA261A /* WebKit.framework in Frameworks */,
 				4F881A49785FAE5B9DA0AA9D /* Pods_ZadatakK7.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,13 +73,13 @@
 				7FF411D70B8679A6D69539A8 /* Pods-ZadatakK7.debug.xcconfig */,
 				7FC6119FD2353369BC0BB79A /* Pods-ZadatakK7.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		25587F912F62533F068997D7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F842AFB273838A000AA261A /* WebKit.framework */,
 				CF2D05EC2C21383E54632E8E /* Pods_ZadatakK7.framework */,
 			);
 			name = Frameworks;
@@ -130,6 +135,7 @@
 				2F842ABE2737D3E500AA261A /* HomeVC.swift */,
 				2F842AC72737DB4400AA261A /* DataList */,
 				2F842AE72738309200AA261A /* Keyboard */,
+				2F842AF72738374800AA261A /* Web */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -200,6 +206,14 @@
 				2F842AE8273830BA00AA261A /* KeyboardTestVC.swift */,
 			);
 			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		2F842AF72738374800AA261A /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				2F842AF82738376200AA261A /* WebTestVC.swift */,
+			);
+			path = Web;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +335,7 @@
 				2F842AC52737D82F00AA261A /* Person.swift in Sources */,
 				2F842ACC2737DB9C00AA261A /* PersonInfoVC.swift in Sources */,
 				2F842A9C2737CA7F00AA261A /* AppDelegate.swift in Sources */,
+				2F842AF92738376200AA261A /* WebTestVC.swift in Sources */,
 				2F842ABC2737D2B800AA261A /* ZKColor.swift in Sources */,
 				2F842AE9273830BA00AA261A /* KeyboardTestVC.swift in Sources */,
 				2F842ABF2737D3E500AA261A /* HomeVC.swift in Sources */,

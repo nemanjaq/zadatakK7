@@ -55,6 +55,9 @@
                                         <state key="normal" title="WebView Test">
                                             <color key="titleColor" name="ZKButton"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="hVY-vH-8rt" kind="presentation" id="seK-D3-gcp"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -346,6 +349,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dwB-HR-kgr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2059" y="623"/>
+        </scene>
+        <!--Web TestVC-->
+        <scene sceneID="Uy9-hM-W9H">
+            <objects>
+                <viewController id="hVY-vH-8rt" customClass="WebTestVC" customModule="ZadatakK7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H7z-Qb-5Q4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQm-Y8-xyy" customClass="ZKButtonClose" customModule="ZadatakK7" customModuleProvider="target">
+                                <rect key="frame" x="256" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="6uy-Sd-0vX"/>
+                                    <constraint firstAttribute="width" constant="44" id="F5F-ER-j3C"/>
+                                </constraints>
+                                <state key="normal" title="X"/>
+                                <connections>
+                                    <action selector="didPressButtonClose:" destination="hVY-vH-8rt" eventType="touchUpInside" id="Yj2-GV-cYu"/>
+                                </connections>
+                            </button>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c74-PE-eQW">
+                                <rect key="frame" x="0.0" y="74" width="320" height="386"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QUh-E2-7gX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QUh-E2-7gX" firstAttribute="bottom" secondItem="c74-PE-eQW" secondAttribute="bottom" id="8Wi-Ei-Lsf"/>
+                            <constraint firstItem="QUh-E2-7gX" firstAttribute="trailing" secondItem="DQm-Y8-xyy" secondAttribute="trailing" constant="20" id="Dbt-V5-Bpx"/>
+                            <constraint firstItem="DQm-Y8-xyy" firstAttribute="top" secondItem="QUh-E2-7gX" secondAttribute="top" constant="20" id="Y4s-nq-Csa"/>
+                            <constraint firstItem="c74-PE-eQW" firstAttribute="leading" secondItem="QUh-E2-7gX" secondAttribute="leading" id="fMx-yW-Djd"/>
+                            <constraint firstItem="QUh-E2-7gX" firstAttribute="trailing" secondItem="c74-PE-eQW" secondAttribute="trailing" id="hOJ-hZ-ZWA"/>
+                            <constraint firstItem="c74-PE-eQW" firstAttribute="top" secondItem="DQm-Y8-xyy" secondAttribute="bottom" constant="10" id="s2Y-lM-1Vh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="c74-PE-eQW" id="AfH-IP-uFf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LnK-Bn-dUW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2059" y="1366"/>
         </scene>
     </scenes>
     <resources>
